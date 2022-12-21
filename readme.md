@@ -1,0 +1,1 @@
+[макет](https://www.figma.com/file/ntVt8IwlwzfVFMBuVVAze8/Plants?node-id=0%3A1&t=2ZNR6vtKJvQz5cg9-0)
