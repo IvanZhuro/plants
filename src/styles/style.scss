@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Inika", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a,
+img {
+  display: block;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+  width: min(100%, 1440px);
+}
+
+@import "./variables.scss";
+@import "./header.scss";
+@import "./main.scss";

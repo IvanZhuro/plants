@@ -1,0 +1,87 @@
+.service {
+  padding: 40px 110px 121px 110px;
+  background-color: $bgSection;
+  display: grid;
+  grid-template-areas:
+    "h2 checkBox"
+    "services services";
+  grid-template-columns: 290px auto;
+  grid-template-rows: 184px auto;
+  h2 {
+    grid-area: h2;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499a18;
+    max-width: 290px;
+  }
+  .checkBox {
+    grid-area: checkBox;
+    width: max-content;
+    border: none;
+    display: inline-flex;
+    column-gap: 38px;
+    margin-top: 30px;
+    margin-left: 157px;
+    > div {
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      font-size: 20px;
+      line-height: 26px;
+      color: #e06733;
+      width: 161px;
+      height: 50px;
+      border: 1px solid #e06733;
+      border-radius: 5px;
+    }
+    > div:hover {
+      background-color: #e06733;
+      cursor: pointer;
+      color: #fff;
+    }
+    > .orange {
+      background-color: #e06733;
+      color: #fff;
+    }
+  }
+  .services {
+    grid-area: services;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 55px;
+    > .service-item {
+      height: 450px;
+      border-radius: 20px;
+      overflow: hidden;
+      > .service-item-bottom {
+        height: 100px;
+        border: 1px solid #e3e1d5;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+        > h3 {
+          margin-top: 10px;
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: #e06733;
+        }
+        > p {
+          margin-top: 13px;
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #717171;
+        }
+      }
+    }
+    > .blur {
+      filter: blur(1.8px);
+    }
+  }
+}

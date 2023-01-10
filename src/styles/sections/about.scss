@@ -1,0 +1,31 @@
+.about {
+  display: grid;
+  grid-template-columns: 605px auto 465px;
+  grid-template-rows: 172px auto;
+  grid-template-areas: "h2 auto img" "p auto img";
+  padding: 93px 108px 94px 110px;
+  .h2 {
+    max-width: 425px;
+    align-self: end;
+    grid-area: h2;
+    color: #499a18;
+    font-size: 40px;
+    line-height: 52px;
+    .span {
+      color: #e06733;
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+  .p {
+    padding-top: 38px;
+    grid-area: p;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+  }
+  .img {
+    grid-area: img;
+  }
+}
