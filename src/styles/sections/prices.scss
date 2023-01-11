@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas: "h2 contact-us" "prices-accourdion contact-us" "prices-accourdion img";
   grid-template-columns: 290px auto;
-  grid-template-rows: 110px 100px auto;
+  grid-template-rows: 110px 115px auto;
   > h2 {
     grid-area: h2;
     font-family: "Inter", sans-serif;
@@ -11,15 +11,84 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-
     color: #000000;
   }
   .prices-accourdion {
     grid-area: prices-accourdion;
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    row-gap: 32px;
     padding: 34px 41px;
     width: max-content;
     border: 1px solid #e3e1d5;
     border-radius: 20px;
+    .price-item {
+      > .top {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        h4 {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: #000000;
+        }
+        > .arrow {
+            margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      background-color: #edf2ec;
+      border-radius: 20px;
+      width: 250px;
+      padding: 15px 40px;
+      transition: padding-bottom 1s, background-color 1s;
+      > .unwrap-content {
+        > p[class="text"] {
+          margin: 6px 0px;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 12px;
+          color: #717171;
+        }
+        > p[class="price"] {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 20px;
+          color: #000000;
+          > span {
+            color: #e06733;
+            > span[class="count"] {
+              vertical-align: text-top;
+              color: #e06733;
+            }
+          }
+        }
+        > button {
+          margin-top: 12px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          color: #717171;
+          background: #ffffff;
+          border: none;
+          width: 86px;
+          height: 25px;
+          border-radius: 10px;
+        }
+        > button:hover {
+          cursor: pointer;
+          background-color: #f9fff8;
+          box-shadow: 1px 1px 5px;
+        }
+      }
+    }
+    .unWrap {
+      background-color: #d6e7d2;
+    }
   }
   .contact-us {
     justify-self: end;
@@ -44,6 +113,7 @@
       }
     }
     button {
+      margin-top: 41px;
       width: 162px;
       height: 50px;
       border: 1px solid #e06733;
@@ -65,5 +135,7 @@
   img {
     justify-self: end;
     grid-area: img;
+    position: relative;
+    right: -10px;
   }
 }
