@@ -4,6 +4,7 @@
   padding-right: 108px;
   padding-bottom: 55px;
   column-gap: 100px;
+  height: 530px;
   grid-template-areas: "img a h2" "img a p" "img a button";
   grid-template-columns: 450px auto 550px;
   grid-template-rows: 145px auto 83px;
@@ -50,7 +51,6 @@
   .button:hover {
     cursor: pointer;
     background-color: #e06733;
-    color: #FFFFFF;
-    ;
+    color: #ffffff;
   }
 }

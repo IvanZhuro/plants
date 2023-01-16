@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background-color: #fff;
+  p,
+  span,
+  a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+  }
+  p {
+    width: max-content;
+  }
+  a {
+    color: #717171;;
+    display: inline-block;
+  }
+  a:hover {
+    color: #E06733;
+  }
+  span {
+    margin: 0 15px;
+  }
+}
